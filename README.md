@@ -1,4 +1,4 @@
-# QUT Zone Substation Security (2023) - SV attack datasets
+# QUT Zone Substation Security - SV attack datasets
 
 ## Background
 Zone Substations are used to transform sub-transmission voltages (typically 34.5 kV to 69 kV) to high-voltage distribution voltages (typically 11 kV to 22 kV) and to act as controlling points between different high-voltage networks. Figure 1 illustrates the overall architecture and process of common power girds.
