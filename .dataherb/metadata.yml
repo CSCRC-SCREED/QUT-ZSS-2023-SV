@@ -1,0 +1,35 @@
+name: QUT-ZSS-2023-SV
+description: The Datasets contain a wide variety of network and physical behaviours of an IEC-61850-compliant zone substation.
+             The datasets are compatible with actual substation network traffic, including benign GOOSE packets, benign SV packets, and MALICIOUS SV packets.
+             The datasets consist of two versions, including raw datasets and labelled datasets.
+contributors:
+- name: Xuelei Wang
+
+data:
+- path: https://github.com/CSCRC-SCREED/QUT-ZSS-2023-SV
+  format: pcapng AND csv
+  type: simulated/synthetic
+  status: raw AND processed/labelled
+  
+- metadata of raw datasets:
+    total number of scenarios: [?]
+    total number of pcapng files: [?, ? files are the primary data and the rest ? files are for redundancy purpose]
+    size: [Approx ? GB, including both the primary and the redundancy]
+    total number of GOOSE packets: [?]
+    total number of SV packets: [?]
+    
+- metadata of processed/labelled datasets:
+    total number of scenarios: [?]
+    total number of csv/xlsx files: [?, including ? QUTZS_GOOSE.csv files, ? QUTZS_SV.csv files, and ? QUTZS_final.xlsx files]
+    size: [Approx ? MB, including data contained GOOSE features only, data contained SV features only, and data merged both features and labelled]
+    total number of merged samples: [?]
+    total number of benign samples: [?, including ? samples under fault-free operation and ? samples under emergency operation]
+    total number of malicious samples: [?]
+    total number of invalid samples: [?, explained in the README file in the Scenario ?]
+
+license:
+- name: GNU v3
+  link: [https://choosealicense.com/licenses/gpl-3.0/]
+references:
+- name: [?]
+  link: [?]
