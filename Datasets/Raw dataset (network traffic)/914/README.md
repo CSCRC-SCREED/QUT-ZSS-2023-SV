@@ -3,7 +3,7 @@ In this scenario, the malicious program injects messages with counterfeit measur
 
 **QUTZS.pcapng is the primary data, QUTZS_Redundant.pcapng is for redundancy purpose.**
 
-1. **${\color{red}Two}$ attack targets**: 
+1. **${\color{red}Four}$ attack targets**: 
    - **a**: disabling the safety protection when a short-circuit fault happens in Fault_FDR1
    - **b**: disabling the safety protection when a short-circuit fault happens in Fault_FDR2
    - **c**: disabling the safety protection when a short-circuit fault happens in Fault_FDR3
