@@ -1,5 +1,5 @@
 ## Scenario 911
-In this scenario, the malicious program injects messages every 50ms (normal HeartBeat is 50ms) with counterfeit measurements to fake fault-free situations only when an over-current status occurs on 66kV bus line (a measurement exceed the pre-defined threshold). The malicious program stops injecting when the measurement is back to normal. The scenario contains a total of ${\color{red}four}$ sub-scenarios, which are combinations of ${\color{red}two}$ attack targets and ${\color{red}two}$ attack configurations.
+In this scenario, the malicious program injects messages with counterfeit measurements to fake fault-free situations only when an over-current status occurs on the 66kV bus line (measurements exceed the pre-defined threshold). The malicious program stops injecting when the actual measurements are back to normal. The scenario contains a total of ${\color{red}four}$ sub-scenarios, which are combinations of ${\color{red}two}$ attack targets and ${\color{red}two}$ attack configurations.
 
 **QUTZS.pcapng is the primary data, QUTZS_Redundant.pcapng is for redundancy purpose.**
 

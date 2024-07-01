@@ -1,8 +1,8 @@
 # Malicious behaviour:
 
-Network level: Except the Benign publisher program, the malicious program will be also running and publishing SV packets (25ms heartbeat) with counterfeit measurements to fake fault-free situations only when an over-current status occurs on 66kV bus line (a measurement exceed the pre-defined threshold). The malicious program stops injecting when the measurement is back to normal.
+Network level: Except for the benign publisher program, the malicious program will be also running and publishing SV packets (**25ms heartbeat**) with counterfeit measurements to fake fault-free situations only when an over-current status occurs on the 66kV bus line (measurements exceed the pre-defined threshold). The malicious program stops injecting when the actual measurements are back to normal.
 
-Physical process level: if a short circuit happens on 66kV bus line, Circuit breakers STILL trip and the safety protection is STILL functional.
+Physical process level: if a short circuit happens on the 66kV bus line, Circuit breakers STILL trip and the safety protection is STILL functional.
 
 Four types of events happen successively, and the approximate ranges of SmpCnt for each type are specified: 
 - Fault-free (0-400, 1400-1800)
