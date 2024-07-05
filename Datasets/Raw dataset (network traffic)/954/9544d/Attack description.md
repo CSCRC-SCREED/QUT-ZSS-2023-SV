@@ -1,11 +1,11 @@
 # Malicious behaviour:
 
-Network level: Except the Benign publisher program, the malicious program will be also running and publishing SV packets (25ms heartbeat) with counterfeit measurements to fake fault-free situations only when an over-current status occurs around Transformers (a measurement exceed the pre-defined threshold). The malicious program stops injecting when the measurement is back to normal.
+Network level: When a true emergency (short-circuit) occurs around Feeders, the malicious program will start by recording all variations in measurements until the fault is isolated (the associated measurements drop to 0). In a future moment (e.g., 100 seconds after the true emergency occurs), except for the benign publisher program, the malicious program will start again and inject SV packets (**25ms** heartbeat) with **the first 40** recorded measurements to replay an emergency (short-circuit) situation around Feeders.
 
-Physical process level: if a short circuit happens around Transformers, Circuit breakers STILL trip and the safety protection is STILL functional.
+Physical process level: Under fault-free operation, circuit breakers protecting the Feeders are deceived into tripping IN MOST CASES (attacks impact the physical process IN MOST CASES), while the power supply is interrupted IN MOST CASES.
 
-Four types of events happen successively, and the approximate ranges of SmpCnt for each type are specified: 
-- Fault-free (0-400, 1400-1800)
-- Attacks (400-500, 1800-1900)
-- Emergency (500-1200, 1900-2400)
-- DMZ (1200-1400)
+Four types of events happen successively, and the approximate SmpCnt (benign) ranges of each type are listed below:
+- Fault-free (0-400, 1200-2400, 3000-3400, 4200-5400)
+- Attacks (2400-2420, 5400-5420)
+- Emergency (400-1200, 2420-2800, 3400-4200, 5420-5800)
+- DMZ (2800-3000)

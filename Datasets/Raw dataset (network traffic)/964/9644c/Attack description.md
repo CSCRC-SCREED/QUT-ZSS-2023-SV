@@ -4,7 +4,7 @@ Network level: Except the Benign publisher program, the malicious program will b
 
 Physical process level: if a short circuit happens around Transformers, Circuit breakers STILL trip and the safety protection is STILL functional.
 
-Four types of events happen successively, and the approximate ranges of SmpCnt for each type are specified: 
+Four types of events happen successively, and the approximate SmpCnt (benign) ranges of each type are listed below:
 - Fault-free (0-400, 1400-1800)
 - Attacks (400-500, 1800-1900)
 - Emergency (500-1200, 1900-2400)

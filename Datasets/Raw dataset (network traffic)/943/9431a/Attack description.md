@@ -1,11 +1,11 @@
 # Malicious behaviour:
 
-Network level: Except the Benign publisher program, the malicious program will be also running and publishing SV packets (50ms heartbeat) with counterfeit measurements to fake fault-free situations only when an over-current status occurs around Transformers (a measurement exceed the pre-defined threshold). The malicious program stops injecting when the measurement is back to normal.
+Network level: the malicious program will modify a certain number of the original SV packets with fake measurements to spoof an emergency (short-circuit) situation on the 22kV bus line. The malicious program starts from approximately the 15th second, the 60th second, and the 105th second, respectively.
 
-Physical process level: if a short circuit happens around Transformers, Circuit breakers STILL trip and the safety protection is STILL functional.
+Physical process level: Under fault-free operation, circuit breakers protecting the 22kV bus line are ALWAYS deceived into tripping (attacks ALWAYS impact the physical process), while the power supply is ALWAYS interrupted.
 
-Four types of events happen successively, and the approximate ranges of SmpCnt for each type are specified: 
-- Fault-free (0-400, 1400-1800)
-- Attacks (400-500, 1800-1900)
-- Emergency (500-1200, 1900-2400)
-- DMZ (1200-1400)
+Four types of events happen successively, and the approximate SmpCnt (benign) ranges of each type are listed below:
+- Fault-free (0-300, 620-1200, 1520-2100)
+- Attacks (300-320, 1200-1220, 2100-2120)
+- Emergency (320-420, 1220-1320, 2120-2400)
+- DMZ (420-620, 1320-1520)
