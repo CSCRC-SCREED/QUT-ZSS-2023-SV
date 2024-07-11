@@ -1,11 +1,11 @@
 # Malicious behaviour:
 
-Network level: Except the Benign publisher program, the malicious program will be also running and publishing SV packets (25ms heartbeat) with counterfeit measurements to fake fault-free situations only when an over-current status occurs on 66kV bus line (a measurement exceed the pre-defined threshold). The malicious program stops injecting when the measurement is back to normal.
+Network level: When a true emergency (short-circuit) occurs on the 22kV bus line, the malicious program will start by recording all variations in measurements until the fault is isolated (the associated measurements drop to 0). In a future moment (e.g., 100 seconds after the true emergency occurs), the malicious program will modify **40** original SV packets with **the first 40** recorded measurements (**while increasing the measurement values to 1.5 times**) to replay an emergency (short-circuit) situation on the 22kV bus line.
 
-Physical process level: if a short circuit happens on 66kV bus line, Circuit breakers STILL trip and the safety protection is STILL functional.
+Physical process level: Under fault-free operation, circuit breakers protecting the 22kV bus line are ALWAYS deceived into tripping (attacks ALWAYS impact the physical process), while the power supply is ALWAYS interrupted.
 
 Four types of events happen successively, and the approximate SmpCnt (benign) ranges of each type are listed below:
-- Fault-free (0-400, 1400-1800)
-- Attacks (400-500, 1800-1900)
-- Emergency (500-1200, 1900-2400)
-- DMZ (1200-1400)
+- Fault-free (0-400, 1200-2400, 3000-3400, 4200-5400)
+- Attacks (2400-2440, 5400-5440)
+- Emergency (400-1200, 2440-2800, 3400-4200, 5440-5800)
+- DMZ (2800-3000)
