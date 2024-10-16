@@ -2,7 +2,7 @@
 
 Network level: Except for the benign publisher program, the malicious program will also be running and publishing **80** SV packets (**25ms** heartbeat) with fake measurements to spoof an emergency (short-circuit) situation around Transformers. The malicious program starts from approximately the 15th second, the 60th second, and the 105th second, respectively.
 
-Physical process level: Under fault-free operation, circuit breakers protecting the Transformers are deceived into tripping IN MOST CASES (attacks impact the physical process IN MOST CASES), while the power supply is interrupted IN MOST CASES.
+Physical process level: Under fault-free operation, circuit breakers protecting the Transformers are ALWAYS decived into tripping (attacks ALWAYS impact the physical process), while the power supply is ALWAYS interrupted.
 
 Four types of events happen successively, and the approximate SmpCnt (benign) ranges of each type are listed below:
 - Fault-free (0-300, 640-1200, 1540-2100)
