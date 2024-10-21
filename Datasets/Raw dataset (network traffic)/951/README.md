@@ -9,7 +9,6 @@ In this scenario,  when a true emergency (short-circuit) occurs on the 66kV bus 
 2. **${\color{red}Four}$ attack configurations**:
    - **9511**: injecting SV packets with all recorded measurements at a 50ms heartbeat
    - **9512**: injecting SV packets with all recorded measurements at a 25ms heartbeat
-   - **9513**: injecting SV packets with the first 80 recorded measurements at a 50ms heartbeat
-   - **9514**: injecting SV packets with the first 40 recorded measurements at a 25ms heartbeat
+   - **9513**: injecting SV packets with the first half recorded measurements at a 25ms heartbeat
 
 <img src="https://github.com/CSCRC-SCREED/QUT-ZSS-2023-SV/blob/main/Datasets/PrimaryPlant.jpg" alt="" width="800" height="510" />
