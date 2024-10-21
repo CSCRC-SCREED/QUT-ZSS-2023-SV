@@ -9,7 +9,6 @@ In this scenario,  when a true emergency (short-circuit) occurs around Transform
 2. **${\color{red}Four}$ attack configurations**:
    - **9521**: injecting SV packets with all recorded measurements at a 50ms heartbeat
    - **9522**: injecting SV packets with all recorded measurements at a 25ms heartbeat
-   - **9523**: injecting SV packets with the first 80 recorded measurements at a 50ms heartbeat
-   - **9524**: injecting SV packets with the first 40 recorded measurements at a 25ms heartbeat
+   - **9523**: injecting SV packets with the first half recorded measurements at a 25ms heartbeat
 
 <img src="https://github.com/CSCRC-SCREED/QUT-ZSS-2023-SV/blob/main/Datasets/PrimaryPlant.jpg" alt="" width="800" height="510" />
