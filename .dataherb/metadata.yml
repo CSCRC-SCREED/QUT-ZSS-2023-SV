@@ -12,24 +12,23 @@ data:
   status: raw AND processed/labelled
   
 - metadata of raw datasets:
-    total number of scenarios: [?]
-    total number of pcapng files: [?, ? files are the primary data and the rest ? files are for redundancy purpose]
-    size: [Approx ? GB, including both the primary and the redundancy]
-    total number of GOOSE packets: [?]
-    total number of SV packets: [?]
+    total number of scenarios: [39]
+    total number of pcapng files: [338, 169 files are the primary data and the rest 169 files are for redundancy purpose]
+    size: [Approx 1.16 GB, including both the primary and the redundancy]
+    total number of GOOSE packets: [95442]
+    total number of SV packets: [1125988]
     
 - metadata of processed/labelled datasets:
-    total number of scenarios: [?]
-    total number of csv/xlsx files: [?, including ? QUTZS_GOOSE.csv files, ? QUTZS_SV.csv files, and ? QUTZS_final.xlsx files]
-    size: [Approx ? MB, including data contained GOOSE features only, data contained SV features only, and data merged both features and labelled]
-    total number of merged samples: [?]
-    total number of benign samples: [?, including ? samples under fault-free operation and ? samples under emergency operation]
-    total number of malicious samples: [?]
-    total number of invalid samples: [?, explained in the README file in the Scenario ?]
+    total number of scenarios: [39]
+    total number of csv/xlsx files: [507, including 169 QUTZS_GOOSE.csv files, 169 QUTZS_SV.csv files, and 169 QUTZS_final.xlsx files]
+    size: [Approx 604 MB, including data contained GOOSE features only, data contained SV features only, and data merged both features and labelled]
+    total number of merged samples: [579104]
+    total number of benign samples: [550777, including 232694 samples under fault-free operation and 318083 samples under emergency operation]
+    total number of malicious samples: [28327]
 
 license:
 - name: GNU v3
   link: [https://choosealicense.com/licenses/gpl-3.0/]
 references:
-- name: [?]
-  link: [?]
+- name: [Machine Learning Feature Engineering for Detecting Cyber Attacks on Sampled Values in Smart Electricity Substations]
+  link: [Under-review]
